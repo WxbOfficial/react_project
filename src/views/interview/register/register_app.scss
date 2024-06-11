@@ -1,0 +1,109 @@
+/*css 初始化*/
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overscroll-behavior: none; /*防止被 mac 的手势影响*/
+}
+html {
+  font-size: 100px;
+}
+body {
+  position: relative;
+  font-size: 0.2rem;
+}
+
+div,
+textarea,
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  user-select: none;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	background-color: transparent!important;
+	background-image: none !important;
+	-webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+/* app */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  padding: 0 10px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(64, 64, 64);
+
+  > .navigation-tab {
+    padding: 0 10px;
+    font-size: 14px;
+    color: rgb(223, 223, 223);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+.main {
+  width: 100%;
+  height: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* antd 相关 css */
+/* table */
+.antd-table_buttons{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+	>.button{
+		padding: 0 0.1rem;
+		margin-right: 0.1rem;
+		// width: 0.7rem;
+		min-width: 0.7rem;
+		height: 100%;
+		line-height: 0.28rem;
+		text-align: center;
+		font-size: 0.12rem;
+		cursor: pointer;
+		border: 0.01rem solid #dcdfe6;
+		color: rgba(0, 0, 0, 0.8);
+		border-radius: 0.04rem;
+		transition: color .3s, border-color .3s, background-color .3s;
+		&:hover{
+			color: #737373;
+			border-color: #737373;
+			background-color: #eeeeee;
+		}
+		>a{
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+	>.button.pointer_none{
+		pointer-events: none;
+	}
+	>.button.other{
+		padding: 0;
+		min-width: 0.3rem;
+	}
+}

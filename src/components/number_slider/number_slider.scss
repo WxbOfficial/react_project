@@ -1,0 +1,29 @@
+
+
+.c-number_slider{
+	display: flex;
+	align-items: center;
+	width: 70%;
+	cursor: pointer;
+	>.slider-bar{
+		position: relative;
+		width: 100%;
+		height: 0.04rem;
+		align-items: center;
+		background-color: #2c393c;
+		border: 0.01rem solid #293538;
+		>.slider{
+			position: absolute;
+			top: -0.07rem;
+			width: 0.08rem;
+			height: 0.16rem;
+			background-color: #5b7073;
+			border: 0.01rem solid #293538;
+			cursor: ew-resize;
+			transition: background-color .3s;
+		}
+		>.slider:active{
+			background-color: #ffffff;
+		}
+	}
+}

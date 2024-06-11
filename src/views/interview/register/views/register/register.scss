@@ -1,0 +1,58 @@
+.register {
+	margin: auto;
+	padding: 0 16px;
+	width: 100%;
+	max-width: 450px;
+	height: 100%;
+
+	>.register-types {
+		display: flex;
+	}
+	>.register-agreement-wrap {
+		display: flex;
+
+		>.register-agreement{
+			padding: 0 0 0 10px;
+			line-height: 24px;
+			font-size: 12px;
+		}
+	}
+}
+
+.register-item-error{
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #f15533;
+}
+
+.mobile-register{
+
+	>.mobile-register-tip {
+		padding: 0 0 46px 0;
+		color: rgb(153, 153, 153);
+		font-size: 12px;
+	}
+}
+
+.account-register{
+
+}
+
+.password-popover{
+	>.rule{
+		display: flex;
+		height: 24px;
+		line-height: 24px;
+		>.rule-result{
+			width: 20px;
+			text-align: center;
+		}
+		>.rule-message{
+			font-size: 12px;
+		}
+	}
+	>.rule[data-error="true"]{
+		color: #ff0000;
+	}
+}
