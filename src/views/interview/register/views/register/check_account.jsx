@@ -30,11 +30,11 @@ const CheckAccount = forwardRef((props, ref)=>{
 			if( username.length === 0 ){
 
 				setUsernameError('输入登录名');
-				return Promise.resolve(true);
+				return Promise.resolve(false);
 			}else if( username.length < 5 ){
 
 				setUsernameError('5-25字符, 可以包含字母或者汉字');
-				return Promise.resolve(true);
+				return Promise.resolve(false);
 			}else{
 
 				return serviceCheckUserName( username )
