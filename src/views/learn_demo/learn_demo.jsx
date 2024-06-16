@@ -6,7 +6,15 @@ import LearnCallbackRef from './learn_callback_ref.jsx';
 import LearnUseMemo from './learn_use_memo.jsx';
 import LearnMemo from './learn_memo.jsx';
 
+import ClassComponent from './class_component.jsx';
+
 // import BabylonAccumulate from './babylon_accumulate/babylon_accumulate.jsx';
+
+
+const ClassComponentPage = {
+	Path: '/class_component',
+	Component: ClassComponent,
+}
 
 const LearnStatePage = {
 	Path: '/learn_state',
@@ -39,8 +47,8 @@ const LearnMemoPage = {
 // }
 
 const Pages = [
-	LearnStatePage,
-	LearnCallbackPage, LearnCallbackRefPage, LearnUseMemoPage, LearnMemoPage,
+	ClassComponentPage,
+	LearnStatePage, LearnCallbackPage, LearnCallbackRefPage, LearnUseMemoPage, LearnMemoPage,
 	// BabylonAccumulatePage,
 ];
 
